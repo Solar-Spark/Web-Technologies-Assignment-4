@@ -13,6 +13,7 @@ body{
     color: #fff;
 }
 header{
+    background-color: #050813;
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,7 +21,7 @@ header{
     z-index: 1000;
     display: flex;
     align-items: center;
-    padding: 15px 100px;
+    padding: 20px 100px;
     transition: 0.5s;
 }
 .nav-panel ul{
@@ -258,8 +259,7 @@ main {
     font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -305,4 +305,18 @@ h2 {
     left: 40px;
     bottom: 40px;
     z-index: 1000;
+}
+
+/*Light theme*/
+
+body.light{
+    background-color: #f1f1f1;
+    color:#000000
+}
+.light form, .light .about-section{
+    background-color: #d4d4d4;
+}
+.light input, .light textarea{
+    background-color: #afafaf;
+    border: 1px solid #575757;
 }
