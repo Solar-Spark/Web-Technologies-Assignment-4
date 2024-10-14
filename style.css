@@ -23,6 +23,7 @@ header{
     align-items: center;
     padding: 20px 100px;
     transition: 0.5s;
+    justify-content: space-between;
 }
 .nav-panel ul{
     display: flex;
