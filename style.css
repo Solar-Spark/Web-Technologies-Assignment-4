@@ -353,14 +353,35 @@ body.light{
 }
 
 
-.todo-container {
-    width: 300px;
-    margin: 0 auto;
+.form-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
     text-align: center;
 }
 
+.light .form-section {
+    color: white;
+}
+
+.to-do-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
 #task-input {
-    width: 200px;
+    width: 400px;
     padding: 10px;
 }
 
@@ -409,3 +430,4 @@ button.complete-btn {
     border: none;
     cursor: pointer;
 }
+

@@ -22,15 +22,17 @@
             <div id="clock"></div>
         </header>
         <div id="darkmode-btn" onclick="setDarkMode()"></div>
-
-        <section>
-            <h1>My To-Do List</h1>
-            <div class="todo-container">
-                <input type="text" id="task-input" placeholder="Enter a new task" />
-                <button id="add-task-btn">Add Task</button>
-                <ul id="task-list"></ul>
-            </div>
-        </section>
+        <div class="to-do-wrapper">
+            <section class="form-section">
+                <h1>My To-Do List</h1>
+                <div class="todo-container">
+                    <input type="text" id="task-input" placeholder="Enter a new task" />
+                    <button id="add-task-btn">Add Task</button>
+                    <ul id="task-list"></ul>
+                </div>
+            </section>
+        </div>
+        
         <script src="js/todowishlist.js"></script>
     </body>
 </html>
