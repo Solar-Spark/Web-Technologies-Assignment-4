@@ -14,7 +14,6 @@ body{
 }
 header{
     background-color: #050813;
-    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -25,9 +24,26 @@ header{
     transition: 0.5s;
     justify-content: space-between;
 }
+button{
+    padding: 0.7rem 1.4rem;
+    background: #d61818;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    border: none;
+}
+select{
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.5rem;
+    background-color: #222;
+    color: #bcbcbc;
+}
+button:hover{
+    background: #9c1111;
+}
 .nav-panel ul{
     display: flex;
-    column-gap: 5rem;
+    column-gap: 3rem;
 }
 .nav-panel li{
     position: relative;
@@ -59,7 +75,7 @@ header{
     border-radius: 0.5rem;
 }
 .action-btn:hover{
-    background: #d61818;
+    background: #9c1111;
 }
 section{
     padding: 4.5rem 0 1.5rem;
@@ -258,7 +274,7 @@ main {
     font-weight: bold;
 }
 
-input, textarea {
+input, textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -280,7 +296,7 @@ input, textarea {
 }
 
 .contact-form button:hover {
-    background-color: #555;
+    background-color: #9c1111;
 }
 .about-section {
     max-width: 800px;
@@ -316,11 +332,22 @@ body.light{
 .light form, .light .about-section{
     background-color: #d4d4d4;
 }
-.light input, .light textarea{
+.light input, .light textarea, .light select{
     background-color: #afafaf;
     border: 1px solid #575757;
     color: #000;
 }
 .light #darkmode-btn{
     background-color: #1f1f1f;
+}
+#clock{
+    color: #fff;
+    margin-left: 2rem;
+}
+#numberSorter{
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+#numberSorter h1, #numberSorter #result{
+    margin: 1rem 0;
 }
