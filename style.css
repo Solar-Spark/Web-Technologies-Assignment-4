@@ -351,3 +351,61 @@ body.light{
 #numberSorter h1, #numberSorter #result{
     margin: 1rem 0;
 }
+
+
+.todo-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#task-input {
+    width: 200px;
+    padding: 10px;
+}
+
+.light  #task-input::placeholder {
+    color: #555353;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 4px;
+}
+
+.light .task-item {
+    background-color: #afafaf;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #979191;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.complete-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

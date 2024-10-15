@@ -5,72 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Interactive To-Do List</title>
         <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-            }
-
-            header {
-                margin-bottom: 20px;
-            }
-
-            .todo-container {
-                width: 300px;
-                margin: 0 auto;
-                text-align: center;
-            }
-
-            #task-input {
-                width: 200px;
-                padding: 10px;
-            }
-
-            .light  #task-input::placeholder {
-                color: #555353;
-            }
-
-            #add-task-btn {
-                padding: 10px 15px;
-                cursor: pointer;
-            }
-
-            #task-list {
-                list-style: none;
-                padding: 0;
-            }
-
-            .task-item {
-                display: flex;
-                justify-content: space-between;
-                margin: 10px 0;
-                padding: 10px;
-                background-color: #222;
-                border-radius: 4px;
-            }
-
-            .light .task-item {
-                background-color: #afafaf;
-            }
-
-            .task-item.completed {
-                text-decoration: line-through;
-                color: #979191;
-            }
-
-            button.delete-btn {
-                background-color: red;
-                color: white;
-                border: none;
-                cursor: pointer;
-            }
-
-            button.complete-btn {
-                background-color: green;
-                color: white;
-                border: none;
-                cursor: pointer;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -97,52 +31,6 @@
                 <ul id="task-list"></ul>
             </div>
         </section>
-        <script>
-            // Get elements from the DOM
-            const taskInput = document.getElementById("task-input");
-            const addTaskBtn = document.getElementById("add-task-btn");
-            const taskList = document.getElementById("task-list");
-
-            // Add task to the list
-            addTaskBtn.addEventListener("click", function () {
-                const taskText = taskInput.value.trim();
-
-                // Input validation
-                if (taskText === "") {
-                    alert("Please enter a task!");
-                    return;
-                }
-
-                // Create task element
-                const taskItem = document.createElement("li");
-                taskItem.className = "task-item";
-                taskItem.innerHTML = `
-                    <span>${taskText}</span>
-                    <div>
-                        <button class="complete-btn">Complete</button>
-                        <button class="delete-btn">Delete</button>
-                    </div>
-                `;
-
-                // Add event listener for 'Complete' button
-                const completeBtn = taskItem.querySelector(".complete-btn");
-                completeBtn.addEventListener("click", function () {
-                    taskItem.classList.toggle("completed");
-                });
-
-                // Add event listener for 'Delete' button
-                const deleteBtn = taskItem.querySelector(".delete-btn");
-                deleteBtn.addEventListener("click", function () {
-                    taskItem.remove();
-                });
-
-                // Append task to the list
-                taskList.appendChild(taskItem);
-
-                // Clear input field
-                taskInput.value = "";
-            });
-        </script>
-        <script src="js/script.js"></script>
+        <script src="js/todowishlist.js"></script>
     </body>
 </html>
