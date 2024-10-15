@@ -15,6 +15,8 @@ setInterval(function(){
     document.getElementById("clock").innerHTML = date.toDateString() + ', ' + date.toLocaleTimeString();
     }, 1000);
 
+
+
 function sortNumbers(input, order = 'asc') {
     // Convert the input string into an array of numbers
     let numArray = input.split(/[\s,]+/).map(Number);
@@ -26,7 +28,6 @@ function sortNumbers(input, order = 'asc') {
     
     return numArray;
 }
-
 document.getElementById('sortButton').addEventListener('click', function() {
     const userInput = document.getElementById('numberInput').value;
     const sortOrder = document.getElementById('sortOrder').value;
@@ -34,4 +35,11 @@ document.getElementById('sortButton').addEventListener('click', function() {
     const sortedNumbers = sortNumbers(userInput, sortOrder);
     document.getElementById('result').innerText = sortedNumbers.join(', ');
 });
+
+
+// Function to validate email format
+
+
+
+
 

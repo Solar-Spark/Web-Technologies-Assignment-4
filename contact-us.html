@@ -22,19 +22,19 @@
         </header>
         <main>
             <div class = "darkmode-btn" onclick="setDarkMode()"></div>
-            <form action="/submit_contact" method="POST" class="contact-form">
+            <form id="contactForm" method="POST" class="contact-form" novalidate>
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    
+                <span class="error" id="nameError"></span>
                 <label for="email">Your Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    
+                <span class="error" id="emailError"></span>
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
-    
+                <span class="error" id="subjectError"></span>
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-    
+                <span class="error" id="messageError"></span><br>
                 <button type="submit">Send Message</button>
             </form>
         </main>
@@ -43,6 +43,6 @@
                 <p>Abukhassym Khydyrbayev, Pavel Pertsev, Yernur Kazhyakpar</p>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="js/contactform.js"></script>
     </body>
 </html>
