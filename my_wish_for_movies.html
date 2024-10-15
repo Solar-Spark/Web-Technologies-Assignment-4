@@ -25,6 +25,10 @@
                 padding: 10px;
             }
 
+            .light  #task-input::placeholder {
+                color: #555353;
+            }
+
             #add-task-btn {
                 padding: 10px 15px;
                 cursor: pointer;
@@ -40,13 +44,17 @@
                 justify-content: space-between;
                 margin: 10px 0;
                 padding: 10px;
-                background-color: #f4f4f4;
+                background-color: #222;
                 border-radius: 4px;
+            }
+
+            .light .task-item {
+                background-color: #afafaf;
             }
 
             .task-item.completed {
                 text-decoration: line-through;
-                color: gray;
+                color: #979191;
             }
 
             button.delete-btn {
@@ -79,7 +87,8 @@
             </nav>
             <div id="clock"></div>
         </header>
-        
+        <div id="darkmode-btn" onclick="setDarkMode()"></div>
+
         <section>
             <h1>My To-Do List</h1>
             <div class="todo-container">
@@ -134,5 +143,6 @@
                 taskInput.value = "";
             });
         </script>
+        <script src="js/script.js"></script>
     </body>
 </html>
