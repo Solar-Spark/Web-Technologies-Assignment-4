@@ -1,20 +1,20 @@
 let darkmode = true;
 
-function setDarkMode(){
+function setDarkMode() {
     darkmode = !darkmode;
-    if(darkmode){
+    if (darkmode) {
         document.body.classList.remove('light');
     }
-    else{
+    else {
         document.body.classList.add('light');
     }
 }
 
-setInterval(function(){
+setInterval(function () {
     let date = new Date();
     document.getElementById("clock").innerHTML = date.toDateString() + ', ' + date.toLocaleTimeString();
-    }, 1000);
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+}, 1000);
+document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
     clearErrors(); // Clear previous error messages
 
@@ -41,7 +41,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         isValid = false;
     }
     //Validate subject
-    if (subject == ""){
+    if (subject == "") {
         showError("subjectError", "Subject is required")
     }
     // Validate message
