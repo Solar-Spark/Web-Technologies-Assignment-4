@@ -256,7 +256,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contact-form {
@@ -346,12 +346,11 @@ body.light{
 }
 #numberSorter{
     max-width: 1000px;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 #numberSorter h1, #numberSorter #result{
     margin: 1rem 0;
 }
-
 
 .form-section {
     background-color: #1a1a1a;
@@ -368,20 +367,20 @@ body.light{
 
 .to-do-wrapper {
     display: flex;
+    width: auto;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: 5vh auto;
 }
 
 .todo-container {
-    width: 500px;
-    margin: 0 auto;
+    min-height: 60vh;
+    margin: 20px auto;
     text-align: center;
-    margin-top: 20px;
 }
 
 #task-input {
-    width: 400px;
+    width: 100%;
     padding: 10px;
 }
 

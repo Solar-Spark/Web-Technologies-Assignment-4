@@ -1,16 +1,3 @@
-// Function to toggle dark mode
-let darkmode = true;
-
-function setDarkMode() {
-    darkmode = !darkmode;
-    if (darkmode) {
-        document.body.classList.remove('light');
-    } else {
-        document.body.classList.add('light');
-    }
-}
-
-// Update clock every second
 setInterval(function () {
     let date = new Date();
     document.getElementById("clock").innerHTML = date.toDateString() + ', ' + date.toLocaleTimeString();
