@@ -1,8 +1,3 @@
-setInterval(function () {
-    let date = new Date();
-    document.getElementById("clock").innerHTML = date.toDateString() + ', ' + date.toLocaleTimeString();
-}, 1000);
-
 // To-Do List functionality
 const taskInput = document.getElementById("task-input");
 const addTaskBtn = document.getElementById("add-task-btn");
