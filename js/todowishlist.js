@@ -12,6 +12,12 @@ addTaskBtn.addEventListener("click", function () {
         return;
     }
 
+    // Check if the number of tasks is less than 5
+    if (taskList.childElementCount >= 5) {
+        alert("Maximum possible amount of tasks is 5!");
+        return;
+    }
+
     // Create task element
     const taskItem = document.createElement("li");
     taskItem.className = "task-item";
@@ -32,7 +38,11 @@ addTaskBtn.addEventListener("click", function () {
     // Add event listener for 'Delete' button
     const deleteBtn = taskItem.querySelector(".delete-btn");
     deleteBtn.addEventListener("click", function () {
-        taskItem.remove();
+        const OK = confirm("Are you sure you want to delete this task?");
+        if (OK) {
+            taskItem.remove();
+        }
+        
     });
 
     // Append task to the list
