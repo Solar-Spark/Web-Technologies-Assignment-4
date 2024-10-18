@@ -1,8 +1,6 @@
 function sortNumbers(input, order = 'asc') {
-    // Convert the input string into an array of numbers
-    let numArray = input.split(/[\s,]+/).map(Number);
+    let numArray = [...new Set(input.split(/[\s,]+/).map(Number))];
     
-    // Sort the array based on the order parameter
     numArray.sort(function(a, b) {
         return order === 'asc' ? a - b : b - a;
     });

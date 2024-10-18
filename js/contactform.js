@@ -44,7 +44,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
+    const domain = "astanait.edu.kz";
+    return regex.test(email) && email.endsWith(`@${domain}`);
 }
 
 // Function to display error messages
